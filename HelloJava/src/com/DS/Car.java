@@ -5,6 +5,7 @@ public class Car {
 	public static int Numcar;
 	static int init = 5;
 	public static final Car M1 = new Car();
+	public EmptyInterface mEmptyInterface;
 	
 	static{
 		//Numcar = 5;
@@ -22,6 +23,11 @@ public class Car {
 	public static int getCarInit(){
 		return init;
 	}
+	
+	public interface EmptyInterface {
+		boolean onTouch();
+	}
+	
 	
 
 }

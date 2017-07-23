@@ -16,7 +16,7 @@ class AccessSpecifierTest {
 class ASTChild extends AccessSpecifierTest{
 
 	public void func(){
-		Struct a = new ChildStruct();
+//		Struct a = new ChildStruct();
 //		AccessSpecifierTest.CONST = 5;
 //		AccessSpecifierTest.REF =6;
 		AccessSpecifierTest.b = 8;
@@ -41,21 +41,14 @@ public class HelloGrammar {
 
 	public static void main(String[] args){
 //		EXAMPLE: Assignment statement and prefix increment, post-fix increment
-		int i =2;
-		i = ++i - i++;
-		System.out.println(i);
+//		int i =2;
+//		i = ++i - i++;
+//		System.out.println(i);
+//		
+//		i =2;
+//		i = i++ - ++i;
+//		System.out.println(i);
 		
-		i =2;
-		i = i++ - ++i;
-		System.out.println(i);
-		
-		
-		
-		
-		
-	}
-	
-	
-	
-	
+		System.out.println((-13%5) + (-13/5)*5);
+	}	
 }

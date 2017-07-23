@@ -24,6 +24,8 @@ class A implements PrintAny{
 
 
 public class HelloInterface {
+	
+	static PrintAny pa;
 
 	public static void main (String[] args){
 		//EXAMPLE: Implements Practice
@@ -37,7 +39,6 @@ public class HelloInterface {
 		PrintAny definedIntefaceName = new A();
 		definedIntefaceName.sayHello();
 		//definedIntefaceName.myMethod();
-		
 		
 		//PrintAny cc = new printAny();	//Error: interface must be implemented
 		
@@ -57,6 +58,25 @@ public class HelloInterface {
 		
 		myPrintAny.sayHello();
 		myPrintAny.printNum(5);
+		
+		pa = setPrintAnyInterface();
+		if(pa != null){
+			pa.sayHello();
+		}
+		
+	}
+	
+	public static PrintAny setPrintAnyInterface(){
+		return new PrintAny (){
+			public void sayHello(){
+				System.out.println("Hello Anonymous");
+			}
+			
+			@Override
+			public void printNum(int a){
+				System.out.println(a);
+			}
+		};
 	}
 	
 	
